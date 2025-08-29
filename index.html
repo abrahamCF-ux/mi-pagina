@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIVA CHIVAS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🏆 Club Deportivo Guadalajara - Las Chivas 🟥🟦</h1>
+    <p>esta es mi primera pagina web hecha en VS Code hecha por Abraham.</p>
+    
+    <button onclick="window.open('https://www.youtube.com/@Chivas', '_blank')">
+  Has click aquí </button>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Prueba Imagen</title>
+</head>
+<body>
+  <img src="escudo_chivas.jpeg" alt="Escudo del Club Chivas" id="escudo-chivas">
+</body>
+</html>
+
+<div id="texto-centro"></div>
+
+<script src="script.js"></script>
+
+<script>
+    const contenedor = document.getElementById("texto-centro");
+
+    function agregarTexto(nuevoTexto) {
+        const p = document.createElement("p");
+        p.textContent = nuevoTexto;
+        contenedor.appendChild(p);
+    }
+
+    agregarTexto("Hola mi gente de Perú 😎");
+    agregarTexto("Este es un <strong>texto en negrita</strong>");
+    agregarTexto("Saludos a todos 🔥⚽");
+</script>
+
+<!-- Cuadro de texto en medio -->
+<div id="texto-centro">
+    <p>🟥🟦 Viva Chivas! 🏆⚽</p>
+    <p>El Club Deportivo Guadalajara es uno de los equipos más históricos de México.</p>
+    <p>Su estadio, el Estadio Akron, es el hogar de la pasión rojiblanca.</p>
+
+    <!-- Tabla de marcadores -->
+    <h2>Últimos partidos de Chivas</h2>
+    <table>
+        <tr>
+            <th>Fecha</th>
+            <th>Rival</th>
+            <th>Resultado</th>
+        </tr>
+        <tr>
+            <td>15/09/2019</td>
+            <td>América</td>
+            <td>Chivas 2 - 1 América</td>
+        </tr>
+        <tr>
+            <td>30/11/2020</td>
+            <td>León</td>
+            <td>Chivas 3 - 0 León</td>
+        </tr>
+        <tr>
+            <td>10/03/2021</td>
+            <td>Pumas</td>
+            <td>Chivas 1 - 0 Pumas</td>
+        </tr>
+        <tr>
+            <td>22/08/2022</td>
+            <td>Tigres</td>
+            <td>Chivas 2 - 1 Tigres</td>
+        </tr>
+        <tr>
+            <td>05/05/2023</td>
+            <td>Atlas</td>
+            <td>Chivas 4 - 2 Atlas</td>
+        </tr>
+    </table>
+</div>
+<img src="Chivas.gif" alt="GIF de Chivas" id="gif-chivas">
+
+  <div id="video-chivas-container">
+    <iframe src="https://www.youtube.com/embed/nDmzxm_wedQ" 
+            title="Video de Chivas" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">

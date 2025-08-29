@@ -1,0 +1,111 @@
+body {
+  background-color: rgb(245, 245, 245);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+  color: #3498db;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+img {
+  width: 300px;
+  max-width: 80%;     /* nunca más grande que el 80% del contenedor */
+  height: auto;       /* mantiene proporción */
+  display: block;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin: 20px;           
+  float: left;          
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#texto-centro {
+    margin-top: 50px;
+    width: 40%;            /* ancho del cuadro como antes */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 18px;
+
+    background: white;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#texto-centro table {
+    margin-top: 20px;
+    width: 100%;            /* que ocupe todo el ancho del cuadro */
+    border-collapse: collapse;
+}
+
+#texto-centro th, #texto-centro td {
+    border: 1px solid #3498db;
+    padding: 8px;
+    text-align: center;
+}
+
+#texto-centro th {
+    background-color: #3498db;
+    color: white;
+}
+
+#gif-chivas {
+    position: fixed;   /* lo fija en la pantalla */
+    top: 10px;         /* distancia desde arriba */
+    right: 10px;       /* distancia desde la derecha */
+    width: 250px;      /* tamaño más grande */
+    height: auto;      /* mantiene proporción */
+    z-index: 1000;     /* para que esté encima del resto del contenido */
+}
+
+/* GIF específico */
+#gif-chivas {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 250px;      /* tamaño máximo */
+    max-width: 20%;     /* se reduce si la pantalla es más pequeña */
+    height: auto;
+    z-index: 1000;
+}
+
+@media (max-width: 500px) {
+    #escudo-chivas {
+        width: 200px;   /* más pequeño en pantallas chicas */
+    }
+}
+
+#video-chivas-container {
+    position: relative;
+    width: 80%;              /* ancho relativo al contenedor padre */
+    max-width: 600px;        /* limita el ancho al del cuadro de texto */
+    padding-bottom: 56.25%;  /* mantiene proporción 16:9 */
+    height: 0;
+    margin: 40px auto;       /* centrado horizontal y espacio arriba/abajo */
+}
+
+#video-chivas-container iframe {
+    width: 100%;        /* ocupa todo el contenedor */
+    height: 50%;        /* la mitad de la altura original */
+    min-height: 250px;  /* opcional: que no quede demasiado pequeño */
+}
